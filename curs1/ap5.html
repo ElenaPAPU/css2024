@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 40%;
+            float: left;
+            margin: 20px;
+            border: 2px solid red;
+        }
+        .demo{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quaerat suscipit molestias. Veritatis, perferendis? Totam quod similique quae mollitia nisi eligendi delectus, quas autem non doloremque magni? Minima, amet blanditiis?</p>
+    <p>Quis quibusdam tenetur optio est porro ratione ex maiores dolores. Tempora quibusdam sint officia perferendis voluptatum porro hic ratione, fugit a ducimus molestiae incidunt quos, id, ullam reiciendis libero expedita.</p>
+<button id="btn">Schimba CSS</button>
+<div class="div-left">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus earum nesciunt quaerat repudiandae, tempore aliquid repellat eum provident modi pariatur quam velit dicta. Omnis dolorum quasi fugiat voluptate dolores?</p>
+    <p>Iusto, a nihil. Numquam laboriosam esse fuga facere, et, mollitia ratione adipisci at odio quia id quo pariatur praesentium. Provident, impedit repellat. At, sint excepturi ipsam tempore deleniti quidem expedita!</p>
+    <p>Beatae accusantium porro ad ab asperiores a nesciunt aliquid qui reiciendis, ea ex explicabo non reprehenderit sit odit eaque? Enim modi explicabo ipsam harum porro quia ea pariatur accusamus vel?</p>
+    <p>Vitae nisi cum velit architecto temporibus perferendis, itaque iusto eius aperiam quaerat. Eum quo pariatur ratione esse id doloribus consequatur, accusamus repudiandae sint, vitae aspernatur, deleniti impedit ex facilis in.</p>
+    <p>Mollitia aliquid harum facere laudantium provident quod perferendis voluptas, tempora at a sint, dolorem, suscipit inventore. Praesentium minus nostrum suscipit omnis sunt nisi, cumque odio vitae nobis beatae necessitatibus molestias.</p>
+<button id="btn1">Schimba CSS div stanga</button>
+</div>
+<div class="div-right">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, facilis voluptate ex temporibus explicabo, quia numquam officia, eum ratione quisquam optio? Saepe vero qui officia quas placeat aliquam, alias laboriosam?</p>
+    <p>Repellat mollitia molestiae tempora commodi iste quisquam molestias minima consectetur ea repellendus inventore a quas nulla distinctio veritatis tenetur velit impedit officia, sequi rem quae eveniet! Ea voluptatem libero consequatur.</p>
+    <p>Porro, odio corporis illum dolorem tempora quidem tempore tenetur placeat nulla in doloremque velit quia laboriosam consequuntur est voluptatibus consequatur voluptate neque quasi molestiae ea ipsam ratione. Fuga, harum eaque.</p>
+    <p>Rerum perspiciatis numquam quis? Itaque, magnam qui voluptas voluptate delectus aperiam quos sequi soluta reiciendis magni adipisci odio facilis dolores autem, esse saepe eum, a deleniti quasi natus placeat! In?</p>
+    <p>Facilis voluptate accusantium magnam maxime adipisci ut doloremque veritatis, autem distinctio suscipit odit a eaque placeat! Quod tempore aliquid quaerat dolores id, veritatis nihil itaque repellat obcaecati at beatae laborum.</p>
+    <button id="btn2">Schimba CSS div dreapta</button>
+</div>
+<div>
+    <button id="btn4"> Schimba CSS Adauga class></button>
+    <button id="btn5"> Schimba CSS Adauga class></button>
+    <button id="btn6"> Schimba CSS Adauga class></button>
+</div>
+<script>
+//  Metoda 1 cu style
+let btn = document.getElementById('btn');
+btn.addEventListener('click', function(){
+    let myParagraphs = document.querySelectorAll('body > p');
+    // let myParagraphs2 = document.getElementsByTagName(p);
+    alert(myParagraphs.length);
+    // for(let i = 0; i<myParagraphs.length; i++){
+    // myParagraphs[i].style.color= 'red';
+    // myParagraphs[i].style.fontSize ='18px';
+
+    // }
+    myParagraphs.forEach(function(value){
+    value.style.color= 'red';
+    value.style.fontSize ='18px';
+    })
+  
+})
+
+// Metoda 2
+let btn1 = document.getElementById('btn1');
+btn1.addEventListener('click', function(){
+    let myDiv1 = document.getElementsByClassName('div-left');
+    alert(typeof myDiv1);
+    myDiv1[0]style.cssText=('color:red'); 
+    });
+
+    // Metoda 3
+    let btn2 = document.getElementById('btn2');
+btn2.addEventListener('click', function(){
+    let myDiv2 = document.getElementsByClassName('div-right');
+    // alert(typeof myDiv2);
+    myDiv2[0].setAttribute('style', 'color:green;')
+    });
+
+//     Metoda 4
+    let btn4 = document.getElementById('btn4');
+btn4.addEventListener('click', function(){
+    let myDiv2 = document.getElementsByClassName('div-right');
+    // alert(typeof myDiv1);
+    myDiv2[0].classList.add =('demo')
+    });
+
+    let btn5 = document.getElementById('btn5');
+btn4.addEventListener('click', function(){
+    let myDiv2 = document.getElementsByClassName('div-right');
+    // alert(typeof myDiv1);
+    myDiv2[0].classList.remove =('demo');
+    });
+
+    let btn6 = document.getElementById('btn6');
+btn4.addEventListener('click', function(){
+    let myDiv2 = document.getElementsByClassName('div-right');
+    // alert(typeof myDiv1);
+    myDiv2[0].classList.toggle =('demo');
+    });
+</script>
+</body>
+</html>
