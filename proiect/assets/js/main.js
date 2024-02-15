@@ -13,6 +13,7 @@
       return document.querySelector(el)
     }
   }
+   
 
   /**
    * Easy event listener function
@@ -54,6 +55,7 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
+  
 
   /**
    * Scrolls to an element with header offset
@@ -274,5 +276,6 @@
       mirror: false
     })
   });
+  
 
 })()
