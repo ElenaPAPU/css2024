@@ -318,8 +318,11 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
   width: 100%;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: var(--mycolor);
+.navbar a:hover, 
+.navbar .active, 
+.navbar .active:focus, 
+.navbar li:hover > a {
+  color: var(--font-color);
 }
 .navbar .dropdown ul {
   display: block;

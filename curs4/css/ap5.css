@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
   
  :root {
+  --mycolor:#9210ea;
+  --mybackground:rgba(0, 13, 255, 0.38);
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
@@ -9,61 +11,13 @@
 }
 
 [data-theme="dark"] {
+  --mycolor:#ea1046;
+  --mybackground:rgba(94, 255, 0, 0.38);
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
     --bg-color: #161625;
-    --heading-color: #021034;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  max-width: 90%;
-  margin: 0 auto;
-  font-size: calc(1rem + 0.25vh);
-}
-
-h1 {
-    color: var(--heading-color);
-    font-family: "Sansita One", serif;
-    font-size: 2rem;
-    margin-bottom: 1vh;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.6rem;
-}
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-  font-weight: bold;
-  
-}
-a:hover, a:focus {
-    border-bottom: 3px solid currentColor;
-}
-section {
-  max-width: 68%;
-  margin: 0 auto;
-}
-
-.post-meta {
-  font-size: 1rem;
-  font-style: italic;
-  display: block;
-  margin-bottom: 4vh;
-  color: var(--secondary-color);
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px 0;
+    --heading-color: #050912;
 }
 
 /*slider switch css */
