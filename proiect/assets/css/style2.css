@@ -19,8 +19,9 @@
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #021034;
+    --bg-color: #1d1d9f;
+    --heading-color: #abb0bc;
+   
 }
 
 
@@ -84,8 +85,6 @@ input:checked + .slider:before {
 }
 
 
-
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -131,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -140,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+} 
 
 @keyframes animate-preloader {
   0% {
@@ -150,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1372,7 +1372,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Contact sectiunea 6
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
@@ -1638,4 +1638,4 @@ section {
     text-align: center;
     padding: 2px 0;
   }
-}
+  

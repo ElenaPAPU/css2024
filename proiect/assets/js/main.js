@@ -300,4 +300,6 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 
+// document.querySelector("body > div.page.wrap.no-menu > div.support-section.row-fluid > div.span3.support-box")
+
 })()
